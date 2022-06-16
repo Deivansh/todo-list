@@ -1,0 +1,700 @@
+{
+	"info": {
+		"_postman_id": "cf3202ae-f0c7-4aa7-af09-3cebfa4055f2",
+		"name": "To-Do List",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "To-Do APIs",
+			"item": [
+				{
+					"name": "Get all To-Do List",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiMjAyMi0wNi0xNlQyMDoyNToxNC43MDNaIiwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTY1NTQxMTExNCwiZXhwIjoxNjU1NDExNzE0fQ.frAFm7nBnE_9lCkawJmBObK7csevBWI1E_vel0MXlmA",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/to-do",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"to-do"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all To-Do List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-access-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiMjAyMi0wNi0xNlQyMDoyNToxNC43MDNaIiwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTY1NTQxMTExNCwiZXhwIjoxNjU1NDExNzE0fQ.frAFm7nBnE_9lCkawJmBObK7csevBWI1E_vel0MXlmA",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/to-do",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"to-do"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "772"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"304-iEk0CuFacuhE/wGwA/PqkN+I95w\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Jun 2022 20:25:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"62ab8e82a47cc77e460bc609\",\n        \"task\": \"Task 1\",\n        \"completed\": false,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62ab8e9aa47cc77e460bc60b\",\n        \"task\": \"Task 2\",\n        \"completed\": false,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62ab8e9fa47cc77e460bc60d\",\n        \"task\": \"Task 3\",\n        \"completed\": false,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62ab8ea3a47cc77e460bc60f\",\n        \"task\": \"Task 4\",\n        \"completed\": false,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62ab8ea8a47cc77e460bc611\",\n        \"task\": \"Task 5\",\n        \"completed\": false,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62ab8eada47cc77e460bc613\",\n        \"task\": \"Task 6\",\n        \"completed\": false,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62ab8eb1a47cc77e460bc615\",\n        \"task\": \"Task 7\",\n        \"completed\": false,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62ab8eb6a47cc77e460bc617\",\n        \"task\": \"Task 8\",\n        \"completed\": false,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62ab8ebba47cc77e460bc619\",\n        \"task\": \"Task 9\",\n        \"completed\": false,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62ab8ec0a47cc77e460bc61b\",\n        \"task\": \"Task 10\",\n        \"completed\": false,\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get To-Do Task by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiMjAyMi0wNi0xNlQyMDoyNToxNC43MDNaIiwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTY1NTQxMTExNCwiZXhwIjoxNjU1NDExNzE0fQ.frAFm7nBnE_9lCkawJmBObK7csevBWI1E_vel0MXlmA",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/to-do/62ab8ea3a47cc77e460bc60f",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"to-do",
+								"62ab8ea3a47cc77e460bc60f"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get To-Do Task by ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-access-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiMjAyMi0wNi0xNlQyMDoyNToxNC43MDNaIiwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTY1NTQxMTExNCwiZXhwIjoxNjU1NDExNzE0fQ.frAFm7nBnE_9lCkawJmBObK7csevBWI1E_vel0MXlmA",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/to-do/62ab8ea3a47cc77e460bc60f",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"to-do",
+										"62ab8ea3a47cc77e460bc60f"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "76"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4c-bpjNAmuIJJp/5hpV/5Z6wUGkoeM\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Jun 2022 20:26:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"62ab8ea3a47cc77e460bc60f\",\n    \"task\": \"Task 4\",\n    \"completed\": false,\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Create To-Do Task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiMjAyMi0wNi0xNlQyMDoyNToxNC43MDNaIiwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTY1NTQxMTExNCwiZXhwIjoxNjU1NDExNzE0fQ.frAFm7nBnE_9lCkawJmBObK7csevBWI1E_vel0MXlmA",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"task\": \"Task 11\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/to-do",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"to-do"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create To-Do Task",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-access-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiMjAyMi0wNi0xNlQyMDoyNToxNC43MDNaIiwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTY1NTQxMTExNCwiZXhwIjoxNjU1NDExNzE0fQ.frAFm7nBnE_9lCkawJmBObK7csevBWI1E_vel0MXlmA",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"task\": \"Task 11\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/to-do",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"to-do"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "77"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4d-8uLhdTRF1o062PDqqiKe85NGHR0\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Jun 2022 20:26:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"task\": \"Task 11\",\n    \"completed\": false,\n    \"_id\": \"62ab91e97fe2561853009f64\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Task By ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiMjAyMi0wNi0xNlQyMDoyNToxNC43MDNaIiwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTY1NTQxMTExNCwiZXhwIjoxNjU1NDExNzE0fQ.frAFm7nBnE_9lCkawJmBObK7csevBWI1E_vel0MXlmA",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/to-do/62ab91e97fe2561853009f64",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"to-do",
+								"62ab91e97fe2561853009f64"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Task By ID",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-access-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiMjAyMi0wNi0xNlQyMDoyNToxNC43MDNaIiwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTY1NTQxMTExNCwiZXhwIjoxNjU1NDExNzE0fQ.frAFm7nBnE_9lCkawJmBObK7csevBWI1E_vel0MXlmA",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/to-do/62ab91e97fe2561853009f64",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"to-do",
+										"62ab91e97fe2561853009f64"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "38"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"26-fgR5yLHQ1Hpp6zDESHaY9wJreYE\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Jun 2022 20:27:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"acknowledged\": true,\n    \"deletedCount\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Task By ID",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiMjAyMi0wNi0xNlQyMDoyNToxNC43MDNaIiwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTY1NTQxMTExNCwiZXhwIjoxNjU1NDExNzE0fQ.frAFm7nBnE_9lCkawJmBObK7csevBWI1E_vel0MXlmA",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"task\": \"Task 4 !\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/to-do/task/62ab8ea3a47cc77e460bc60f",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"to-do",
+								"task",
+								"62ab8ea3a47cc77e460bc60f"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Task By ID",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "x-access-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiMjAyMi0wNi0xNlQyMDoyNToxNC43MDNaIiwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTY1NTQxMTExNCwiZXhwIjoxNjU1NDExNzE0fQ.frAFm7nBnE_9lCkawJmBObK7csevBWI1E_vel0MXlmA",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"task\": \"Task 4 !\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/to-do/task/62ab8ea3a47cc77e460bc60f",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"to-do",
+										"task",
+										"62ab8ea3a47cc77e460bc60f"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "78"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4e-F5EkOMQdymBj0LdjD3ohKPpmvTI\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Jun 2022 20:28:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"62ab8ea3a47cc77e460bc60f\",\n    \"task\": \"Task 4 !\",\n    \"completed\": false,\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Task Completion Status By ID",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiMjAyMi0wNi0xNlQyMDoyNToxNC43MDNaIiwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTY1NTQxMTExNCwiZXhwIjoxNjU1NDExNzE0fQ.frAFm7nBnE_9lCkawJmBObK7csevBWI1E_vel0MXlmA",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"completed\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/to-do/task-status/62ab8ea3a47cc77e460bc60f",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"to-do",
+								"task-status",
+								"62ab8ea3a47cc77e460bc60f"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Task Completion Status By ID",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "x-access-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiMjAyMi0wNi0xNlQyMDoyNToxNC43MDNaIiwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTY1NTQxMTExNCwiZXhwIjoxNjU1NDExNzE0fQ.frAFm7nBnE_9lCkawJmBObK7csevBWI1E_vel0MXlmA",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"completed\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/to-do/task-status/62ab8ea3a47cc77e460bc60f",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"to-do",
+										"task-status",
+										"62ab8ea3a47cc77e460bc60f"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "77"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4d-M4+JXt7wNJG7dX5J644iNBhoJeo\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Jun 2022 20:28:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"62ab8ea3a47cc77e460bc60f\",\n    \"task\": \"Task 4 !\",\n    \"completed\": true,\n    \"__v\": 0\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Get Token",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/auth/token",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"auth",
+								"token"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Token",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/auth/token",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"auth",
+										"token"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "199"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c7-oL/h3IfrrXSeEVfND4+gq3xL9sk\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Jun 2022 20:25:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiMjAyMi0wNi0xNlQyMDoyNToxNC43MDNaIiwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTY1NTQxMTExNCwiZXhwIjoxNjU1NDExNzE0fQ.frAFm7nBnE_9lCkawJmBObK7csevBWI1E_vel0MXlmA"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost:3000",
+			"type": "default"
+		}
+	]
+}
